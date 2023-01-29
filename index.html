@@ -241,6 +241,95 @@
     </div>
   </section>
 
+  <footer>
+    <div class="container-fluid d-flex flex-column align-items-center bg-primary mt-5 px-3">
+      <div class="text-white text-center mt-5">
+        <p class="font-monospace text-uppercase small">35,000 + already joined</p>
+        <h3 class="my-5 text-reset">Stay up-to-date with what we're doing</h3>
+        <form action="" class="needs-validation" novalidate>
+          <div class="row g-3 justify-content-center mb-5 ">
+            <div class="col-lg-8 input-group-lg">
+              <input type="email" class="form-control mb-0 fs-6" id="validationUserMail" placeholder="Enter your email address" aria-describedby="emailHelp">
+              <div class="invalid-feedback bg-danger border-top border-danger rounded-bottom text-white text-start mt-0 px-2 py-1">
+                Whoops, make sure it's an email.
+              </div>
+            </div>
+            <div class="col-lg-auto">
+              <button type="submit" class="w-100 btn btn-secondary text-white btn-sm">Contact Us</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>  
+    <div class="container-fluid d-flex bg-dark py-5">
+      <div class="container">
+      <div class="row text-center">
+          <ul class="nav col flex-column flex-md-row flex-lg-row text-uppercase justify-content-center align-items-center">
+            <div class="col col-lg-2">
+              <li class="nav-item">
+                <a class="navbar-brand" aria-current="page" href="#">
+                  <img src="img/logo-bookmark.svg">
+                </a>
+              </li>
+            </div>
+            <div class="col col-lg-5 d-flex">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+            </div>
+          <!-- </ul>
+          <ul class="d-flex"> -->
+            <div class="col col-lg-2 d-flex">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" id="facebook">
+                  <img src="img/icon-facebook.svg">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" id="twitter">
+                  <img src="img/icon-twitter.svg">
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    </div>
+    
+
+  
+
+  <script>
+      // Ejemplo de JavaScript inicial para deshabilitar el envío de formularios si hay campos no válidos
+    (function () {
+      'use strict'
+
+      // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Bucle sobre ellos y evitar el envío
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
+
   <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

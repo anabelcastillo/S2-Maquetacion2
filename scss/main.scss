@@ -1,7 +1,40 @@
-$blue:    #5265E1;
-$pink:    #FA5959;
-$secondary:     $pink;
+$primary:       #5265E1;
+$secondary:     #FA5959;
+$dark:          #000546;
+$gray-600:      #757575;
+$body-color:    $gray-600;
 
+$nav-link-color:                    $gray-600;
+$nav-link-hover-color:              $secondary;
+$nav-tabs-border-color:             none;
+$nav-tabs-border-width:             none;
+$nav-tabs-border-radius:            none;
+$nav-tabs-link-hover-border-color:  $secondary;
+$nav-tabs-link-active-color:        $dark;
+$nav-tabs-link-active-bg:           none;
+$nav-tabs-link-active-border-color: $secondary;
+
+$accordion-border-radius:               none;
+$accordion-button-color:                $dark;
+$accordion-button-active-bg:            rgba($dark, 0.08);
+$accordion-button-active-color:         $dark;
+$accordion-button-focus-border-color:   none;
+$accordion-button-focus-box-shadow:     none;
+$accordion-button-icon:                 url("../img/icon-arrow.svg");
+$accordion-button-active-icon:          url("../img/icon-arrow.svg");
+
+$btn-padding-y-sm:          0.6rem;
+$btn-padding-x-sm:          1rem;
+$input-btn-padding-y:       0.6rem;
+$input-btn-padding-x:       1rem;
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+h1, h2, h3, h4, h5, h6 {
+    color: $dark;
+}
+
+.nav-link.active {
+    border-bottom: 4px solid $secondary;
+}
