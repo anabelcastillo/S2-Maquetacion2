@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="img/favicon-32x32.png"/>
     <link rel="stylesheet" href="css/main.css">
     <title>Bootstrap & SASS</title>
 </head>
@@ -86,7 +87,7 @@
             </article>
             <article class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
               <div class="row align-items-center form-bg gx-5">
-                <div class="col-12 col-lg-6 mb-4 position-relative">
+                <div class="col-12 col-lg-6 mb-4 position-relative text-center">
                     <img src="img/illustration-features-tab-2.svg" alt="" class="img-fluid">
                     <div class="position-absolute bottom-0 end-50 h-75 w-100 bg-primary rounded-end-pill rounded-pill z-index-n2" style="width: 75px; height: 75px; z-index: -2;"></div>
                 </div>
@@ -100,7 +101,7 @@
             </article>
             <article class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
               <div class="row align-items-center form-bg gx-5">
-                <div class="col-12 col-lg-6 mb-4 position-relative">
+                <div class="col-12 col-lg-6 mb-4 position-relative text-center">
                     <img src="img/illustration-features-tab-3.svg" alt="" class="img-fluid">
                     <div class="position-absolute bottom-0 end-50 h-75 w-100 bg-primary rounded-end-pill rounded-pill z-index-n2" style="width: 75px; height: 75px; z-index: -2;"></div>
                 </div>
@@ -119,7 +120,7 @@
   </section>
 
   <section>
-    <hgroup class="container mt-lg-5">
+    <hgroup class="container mb-5 my-lg-5">
       <div class="row mb-3 justify-content-center">
         <div class="col-12 col-lg-6 text-center">
           <h4 class="fw-bolder mb-3">Download the extension</h4>
@@ -131,8 +132,8 @@
       <div class="row justify-content-center">
       <div class="col-12 col-lg-9 mb-5 px-4">
       <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
-        <div class="col">
-          <div class="card pt-4 pb-2 border-0 shadow rounded align-items-center h-100">
+        <div class="col mt-0">
+          <div class="card pt-4 pb-2 border-0 shadow rounded align-items-center">
             <img src="img/logo-chrome.svg" class="card-img-top w-25" alt="Chrome">
             <div class="card-body px-0">
               <h6 class="card-title fw-bold">Add to Chrome</h6>
@@ -142,8 +143,8 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card pt-4 pb-2 border-0 shadow rounded align-items-center h-100">
+        <div class="col mt-md-3 mt-lg-3">
+          <div class="card pt-4 pb-2 border-0 shadow rounded align-items-center">
             <img src="img/logo-firefox.svg" class="card-img-top w-25" alt="Firefox">
             <div class="card-body px-0">
               <h6 class="card-title fw-bold">Add to Firefox</h6>
@@ -153,8 +154,8 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card pt-4 pb-2 border-0 shadow rounded align-items-center h-100">
+        <div class="col mt-md-4 mt-lg-4">
+          <div class="card pt-4 pb-2 border-0 shadow rounded align-items-center">
             <img src="img/logo-opera.svg" class="card-img-top w-25" alt="Opera">
             <div class="card-body px-0">
               <h6 class="card-title fw-bold">Add to Opera</h6>
@@ -246,33 +247,31 @@
       <div class="text-white text-center mt-5">
         <p class="font-monospace text-uppercase small">35,000 + already joined</p>
         <h3 class="my-5 text-reset">Stay up-to-date with what we're doing</h3>
-        <form action="" class="needs-validation" novalidate>
-          <div class="row g-3 justify-content-center mb-5 ">
+        <form class="row g-3 justify-content-center mb-5 needs-validation" novalidate>
             <div class="col-lg-8 input-group-lg">
-              <input type="email" class="form-control mb-0 fs-6" id="validationUserMail" placeholder="Enter your email address" aria-describedby="emailHelp">
+              <input type="email" class="form-control mb-0 fs-6" id="exampleInputEmail1" placeholder="Enter your email address" aria-describedby="emailHelp" required>
               <div class="invalid-feedback bg-danger border-top border-danger rounded-bottom text-white text-start mt-0 px-2 py-1">
                 Whoops, make sure it's an email.
               </div>
             </div>
             <div class="col-lg-auto">
-              <button type="submit" class="w-100 btn btn-secondary text-white btn-sm">Contact Us</button>
+              <button class="btn btn-secondary text-white btn-sm w-100" type="submit">Contact Us</button>
             </div>
-          </div>
         </form>
       </div>
     </div>  
     <div class="container-fluid d-flex bg-dark py-5">
       <div class="container">
-      <div class="row text-center">
+        <div class="row text-center">
           <ul class="nav col flex-column flex-md-row flex-lg-row text-uppercase justify-content-center align-items-center">
             <div class="col col-lg-2">
-              <li class="nav-item">
+              <li class="nav-item mb-3 mb-md-0 mb-lg-0">
                 <a class="navbar-brand" aria-current="page" href="#">
                   <img src="img/logo-bookmark.svg">
                 </a>
               </li>
             </div>
-            <div class="col col-lg-5 d-flex">
+            <div class="col col-lg-5 d-flex flex-column flex-sm-column flex-md-row flex-lg-row mb-3 mb-md-0 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">Features</a>
               </li>
@@ -283,9 +282,7 @@
                 <a class="nav-link text-white" href="#">Contact</a>
               </li>
             </div>
-          <!-- </ul>
-          <ul class="d-flex"> -->
-            <div class="col col-lg-2 d-flex">
+            <div class="col col-lg-2 d-flex ">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#" id="facebook">
                   <img src="img/icon-facebook.svg">
@@ -299,35 +296,34 @@
             </div>
           </ul>
         </div>
-        
       </div>
     </div>
-    </div>
+  </footer>
     
 
   
 
   <script>
-      // Ejemplo de JavaScript inicial para deshabilitar el envío de formularios si hay campos no válidos
-    (function () {
-      'use strict'
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
 
-      // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
-      var forms = document.querySelectorAll('.needs-validation')
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
 
-      // Bucle sobre ellos y evitar el envío
-      Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-          form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-              event.preventDefault()
-              event.stopPropagation()
-            }
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
 
-            form.classList.add('was-validated')
-          }, false)
-        })
-    })()
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
   </script>
 
   <script src="js/bootstrap.min.js"></script>
