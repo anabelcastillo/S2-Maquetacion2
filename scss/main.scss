@@ -12,16 +12,15 @@ $nav-tabs-border-radius:            none;
 $nav-tabs-link-hover-border-color:  $secondary;
 $nav-tabs-link-active-color:        $dark;
 $nav-tabs-link-active-bg:           none;
-$nav-tabs-link-active-border-color: $secondary;
 
 $accordion-border-radius:               none;
 $accordion-button-color:                $dark;
 $accordion-button-active-bg:            rgba($dark, 0.08);
-$accordion-button-active-color:         $dark;
+$accordion-button-active-color:         $secondary;
 $accordion-button-focus-border-color:   none;
 $accordion-button-focus-box-shadow:     none;
 $accordion-button-icon:                 url("../img/icon-arrow.svg");
-$accordion-button-active-icon:          url("../img/icon-arrow.svg");
+$accordion-button-active-icon:          url("../img/icon-arrow-open.svg");
 
 $btn-padding-y-sm:          0.6rem;
 $btn-padding-x-sm:          1rem;
@@ -35,10 +34,44 @@ h1, h2, h3, h4, h5, h6 {
     color: $dark;
 }
 
-.nav-link.active {
-    border-bottom: 4px solid $secondary;
-}
-
 html, body {
     overflow-x: hidden;
+}
+
+.nav-link.active {
+    border-bottom: 4px solid $secondary !important;
+}
+
+.btn-primary:hover {
+    background-color: white !important;
+    border: 1px solid $primary !important;
+    color: $primary !important;
+}
+
+.btn-secondary {
+    border: 1px solid $secondary !important;
+}
+
+.btn-secondary:hover {
+    background-color: white !important;
+    border: 1px solid $secondary !important;
+    color: $secondary !important;
+}
+
+.btn-light:hover {
+    background-color: white !important;
+    border: 1px solid $dark !important;
+    color: $dark !important;
+}
+
+.nav-link:hover {
+    color: $secondary;
+}
+
+.navFooter {
+    color: white;
+}
+
+.iconColor {
+    color: white;
 }
